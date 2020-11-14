@@ -14,16 +14,16 @@ spring:
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
    driver-class-name: com.mysql.cj.jdbc.Driver # 配置MySQL的驱动程序类
-   url: jdbc:mysql://localhost:3306/testmis?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong # 数据库连接地址
-   username: root   # 数据库用户名
-   password: a    # 数据库连接密码
+   url: jdbc:mysql://101.200.81.3:3306/testmis81?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong # 数据库连接地址
+   username: root
+   password: zouwenyu8034
  application:
    name: microservice-config-product-client
  profiles: dev
 
 logging:
   level:
-    com.yc.springcloud2.microserviceprovider: debug
+    com.yc.springcloud812: debug
 
 eureka:
   client: # 客户端进行Eureka注册的配置
@@ -36,7 +36,7 @@ eureka:
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microservice-provider-product
+  app.name: microservice-config-product-client
   company.name: yc
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
@@ -60,16 +60,16 @@ spring:
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
    driver-class-name: com.mysql.cj.jdbc.Driver # 配置MySQL的驱动程序类
-   url: jdbc:mysql://localhost:3306/testmis?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong # 数据库连接地址
-   username: root   # 数据库用户名
-   password: a    # 数据库连接密码
+   url: jdbc:mysql://101.200.81.3:3306/testmis81?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong # 数据库连接地址
+   username: root
+   password: zouwenyu8034
  application:
    name: microservice-config-product-client
  profiles: beta
 
 logging:
   level:
-    com.yc.springcloud2.microserviceprovider: debug
+    com.yc.springcloud812: debug
 
 eureka:
   client: # 客户端进行Eureka注册的配置
